@@ -48,7 +48,7 @@ export default class ResultsPage extends React.Component {
                                             highlightClassName="YourHighlightClass"
                                             searchWords={tokens}
                                             autoEscape={true}
-                                            textToHighlight={result['subject']}
+                                            textToHighlight={result['subject'] === '' ? result['message_body'].substring(0, 115): result['subject']}
                                         />
                                     </li>
 

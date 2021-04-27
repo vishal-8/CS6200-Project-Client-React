@@ -22,7 +22,7 @@ const Search = (props) => {
             className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
         />
         <br/>
-        <button type="button" class="btn btn-info" onClick={search}>Search</button>
+        <button type="button" className="btn btn-info" onClick={search}>Search</button>
     </div>;
 }
 

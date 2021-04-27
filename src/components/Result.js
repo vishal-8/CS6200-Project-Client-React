@@ -20,19 +20,9 @@ export default class Result extends React.Component {
         let tokens = this.state.searchQuery.split(' ')
         return(
             <div>
-              From: <Highlighter
-                highlightClassName="MyrHighlightClass"
-                searchWords={tokens}
-                autoEscape={true}
-                textToHighlight={this.state.result.from}
-                />
+              From:  {this.state.result.from}
               <br/>
-              To: <Highlighter
-                highlightClassName="MyrHighlightClass"
-                searchWords={tokens}
-                autoEscape={true}
-                textToHighlight={this.state.result.to}
-                />
+              To:  {this.state.result.to}
               <br/>
               Subject: <Highlighter
                 highlightClassName="MyrHighlightClass"
@@ -41,29 +31,14 @@ export default class Result extends React.Component {
                 textToHighlight={this.state.result.subject}
                 />
               <br/>
-              cc:<Highlighter
-                highlightClassName="MyrHighlightClass"
-                searchWords={tokens}
-                autoEscape={true}
-                textToHighlight={this.state.result['x-cc']}
-                />
+              cc: {this.state.result['x-cc']}
               <br/>
-              bcc: <Highlighter
-                highlightClassName="MyrHighlightClass"
-                searchWords={tokens}
-                autoEscape={true}
-                textToHighlight={this.state.result['x-bcc']}
-                />
+              bcc: {this.state.result['x-bcc']}
               <br/>
-              Date: <Highlighter
-                highlightClassName="MyrHighlightClass"
-                searchWords={tokens}
-                autoEscape={true}
-                textToHighlight={this.state.result.date}
-                />
+              Date: {this.state.result.date}
               <br/><br/>
 
-              <p>Date: <Highlighter
+              <p>Message: <Highlighter
                   highlightClassName="MyrHighlightClass"
                   searchWords={tokens}
                   autoEscape={true}
