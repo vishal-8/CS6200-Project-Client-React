@@ -68,7 +68,7 @@ export default class LandingPage extends React.Component {
             this.props.history.push({
                 pathname: '/results',
                 // search: '?query=abc',
-                state: { results: response.results}
+                state: { results: response.results, searchQuery: this.state.searchQuery}
             })
         })
 

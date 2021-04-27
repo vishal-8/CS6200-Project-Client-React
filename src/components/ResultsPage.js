@@ -8,16 +8,17 @@ export default class ResultsPage extends React.Component {
         super(props);
 
         this.state = {
-            results: this.props.location.state.results
+            results: this.props.location.state.results,
+            searchQuery: this.props.location.state.searchQuery
         }
     }
 
 
     render() {
-
+        console.log(this.state.searchQuery)
         return(
             <div>
-                A
+                <h2>Showing results for:   "{this.state.searchQuery}"</h2>
                 <ul className="list-group">
                     {this.state.results && this.state.results.length === 0 &&
                     <h3>

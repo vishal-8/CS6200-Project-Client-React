@@ -9,7 +9,16 @@ class RoutingComponent extends React.Component {
         return (
             <div className="container-fluid">
 
-                {/*<h1>Hey</h1>*/}
+                <div >
+                    <a href="http://localhost:3000/">
+                        <button type="button"
+                                className="btn btn-secondary btn-lg">
+                            Enron Email Search
+                        </button>
+                    </a>
+                    <br/><br/>
+
+                </div>
 
                 <Router>
                     {/*<Link to="/login">Login</Link>*/}
