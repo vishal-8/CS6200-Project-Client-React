@@ -12,7 +12,7 @@ class RoutingComponent extends React.Component {
                 <div >
                     <a href="http://localhost:3000/">
                         <button type="button"
-                                className="btn btn-secondary btn-lg">
+                                className="btn btn-dark btn-lg">
                             Enron Email Search
                         </button>
                     </a>
